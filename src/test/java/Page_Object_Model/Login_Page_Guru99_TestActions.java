@@ -28,7 +28,7 @@ public class Login_Page_Guru99_TestActions {
 	lp.setUserName("Admin");
 	lp.setUserPassword("admin123");
 	lp.clickSubmit();
-	Assert.assertEquals(driver.getTitle(), "Login Successfully");
+	Assert.assertEquals(driver.getTitle(), "Guru99 Demo Sites");
 	Thread.sleep(3000);
  }
 
