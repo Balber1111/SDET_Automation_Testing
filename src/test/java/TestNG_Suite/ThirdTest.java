@@ -6,7 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-class ThirdTest {
+public class ThirdTest {
 	
 	  ChromeDriver driver=new ChromeDriver();//It became global variable and accessible from all methods
 	

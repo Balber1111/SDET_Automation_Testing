@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite parallel="tests"  thread-count="3" name="Suite">  // Used parallel tests because we want to execute tests
+  <test thread-count="5" name="ChromeTest">     // You can change the name of the test as per your choice
+  <parameter name="browser" value="chrome">
+  <parameter name="url" value="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login">               // name and value user define which you want to pass for execution
+  </parameter>
+  </parameter>
+    <classes>
+      <class name="TestNG_Suite.Parameterized_TestUsing_XML"/>
+    </classes>
+  </test> <!-- ParameterizedTest -->
+  
+  
+  
+  <test thread-count="3" name="EdgeTest">
+  <parameter name="browser" value="edge">
+  <parameter name="url" value="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login">               // name and value user define which you want to pass for execution
+  </parameter>
+  </parameter>
+    <classes>
+      <class name="TestNG_Suite.Parameterized_TestUsing_XML"/>
+    </classes>
+  </test> <!-- ParameterizedTest -->
+  
+  
+  
+  <test thread-count="3" name="FirefoxTest">
+  <parameter name="browser" value="firefox">
+  <parameter name="url" value="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login">               // name and value user define which you want to pass for execution
+  </parameter>
+  </parameter>
+    <classes>
+      <class name="TestNG_Suite.Parameterized_TestUsing_XML"/>
+    </classes>
+  </test> <!-- ParameterizedTest -->
+  
+</suite> <!-- Suite -->
